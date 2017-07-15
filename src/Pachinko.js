@@ -53,14 +53,14 @@ export class Pachinko {
 
     createBall() {
 
-        Store.balls.push(new Ball(width / 2, 0, 10))
+        Store.balls.push(new Ball(width / random(1, 4), 0, 10))
     }
 
     draw() {
 
         background(51, 51, 51);
 
-        if (frameCount % 60 === 0) {
+        if (frameCount % 20 === 0) {
             this.createBall();
         }
 

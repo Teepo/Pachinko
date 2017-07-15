@@ -10443,7 +10443,7 @@ var Pachinko = exports.Pachinko = function () {
         key: 'createBall',
         value: function createBall() {
 
-            _Store.Store.balls.push(new _Ball.Ball(width / 2, 0, 10));
+            _Store.Store.balls.push(new _Ball.Ball(width / random(1, 4), 0, 10));
         }
     }, {
         key: 'draw',
@@ -10451,7 +10451,7 @@ var Pachinko = exports.Pachinko = function () {
 
             background(51, 51, 51);
 
-            if (frameCount % 60 === 0) {
+            if (frameCount % 20 === 0) {
                 this.createBall();
             }
 
