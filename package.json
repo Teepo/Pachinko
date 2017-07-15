@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "npm run js_maker & npm run server",
+    "server": "./node_modules/serve/bin/serve.js ./public/",
+    "js_maker": "webpack --progress --colors --watch --debug",
+    "jsdoc": "./node_modules/jsdoc/jsdoc.js -c ./.jsdoc.json"
+  },
+  "dependencies": {
+    "matter-js": "^0.13.0",
+    "serve": "^6.0.2",
+    "webpack": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "docdash": "^0.4.0",
+    "eslint": "^4.2.0",
+    "jsdoc": "^3.4.3"
+  }
+}
